@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Creatorise: Priser</title>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+    <link href="../style/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../pictures/creatorise_logo.ico" type="image/x-icon"/>
+    <script src="../java.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <ul class="screenPc">
+        <li><img src="../pictures/creatorise_logo.svg"/></li>
+        <li><a href="../">Startsida</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a style="font-weight: bold; letter-spacing: 0.8px;" href="#priceHead">Priser</a>
+        </li><li><a href="contacts.html">Kontakt</a></li>
+        <li></li>
+        <li style="float: right;"><a href="aboutUs.html">Om oss</a></li>
+      </ul>
+      <ul class="screenPhone">
+        <li><img src="../pictures/creatorise_logo.svg" /></li>
+        <li>Creatorise</li>
+        <li><a href="javascript:void(0);" class="icon" onclick="navDisplay()">
+            <img src="../pictures/menu.svg"/></a></li>
+      </ul>
+    </nav>
+    <div class="navPhone">
+      <div id="navPhoneLinks">
+        <ul>
+          <li style="height: 8vh; visibility: hidden;"><a>filler</a></li>
+          <li><a href="../">Startsida</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a style="font-weight: bold; letter-spacing: 0.8px;">Priser</a></li>
+          <li><a href="contacts.html">Kontakt</a></li>
+          <li><a href="aboutUs.html">Om oss</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="parallax" id="priceHead" 
+      style="background-image: url(../pictures/calculatorBg.jpg);"> <!-- Parallax background -->    
+      <main class="priceHead"><!-- Clickible form -->
+        <form name="kontakt" method="post" action="none">
+          <fieldset class="fieldbox">
+            <legend style="text-align: center; font-size: 16pt; font-family: Niconne;">
+              <h2>Våra Priser</h2>
+            </legend>
+            <div>
+              <input 
+                name="submit"
+                type="button"
+                value="Bröllopsfotografering"
+                onclick="setDisplay(price_weddingMain, 'block', price_profileMain, 'none', price_eventMain, 'none', price_companyMain, 'none' ); location.href='#bgCalcForms';
+                "/>
+            </div>
+            <div>
+              <input
+                name="submit"
+                type="button"
+                value="Porträttfotografering"
+                onclick="setDisplay(price_weddingMain, 'none', price_profileMain, 'block', price_eventMain, 'none', price_companyMain, 'none' ); location.href='#bgCalcForms';"/>
+            </div>
+            <div>
+              <input
+                name="submit"
+                type="button"
+                value="Evenemangsfotografering"
+                onclick="setDisplay(price_weddingMain, 'none', price_profileMain, 'none', price_eventMain, 'block', price_companyMain, 'none' ); location.href='#bgCalcForms';"/>
+            </div>
+            <div>
+              <input
+                name="submit"
+                type="button"
+                value="Företagsfotografering"
+                onclick="setDisplay(price_weddingMain, 'none', price_profileMain, 'none', price_eventMain, 'none', price_companyMain, 'block' ); location.href='#bgCalcForms';"/>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+    <div class="quoteText scrollDown"></div><!-- The white bar -->
+    <div class="text quoteText"></div>
+    <div class="parallax prx-2" id="bgCalcForms">
+      <!-- Price for Profilephotos -->
+      <main class="showCase gone" id="price_profileMain">
+        <main class="price_mainContent">
+          <div class="price_row"><!-- Flexcontainer -->
+            <div class="price_column"><!-- Flexbox -->
+              <h1>Porträttfotografering</h1>
+            </div>
+            <div class="price_column"><!-- Flexbox -->
+              <div class="price_content con_StaffShadow">
+                <img src="../pictures/person_profilePic.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="price_row"> <!-- Flexcontainer -->
+            <div class="price_column"><!-- Flexbox -->
+              <h1 style="text-align: center;">Paket:</h1>
+            </div>
+            <div class="price_column"><!-- Flexbox -->
+              <ul>
+                <li>
+                  <h3>Lilla paketet:</h3>
+                </li>
+                <li>1 295 kr</li>
+                <li>för 1 person</li>
+                <li>1 timmars porträttfotografering</li>
+                <li>2 valfria Högupplösta Redigerade Bilder</li>
+              </ul>
+            </div>
+            <div class="price_column"><!-- Flexbox -->
+              <ul>
+                <li>
+                  <h3>Medium paketet</h3>
+                </li>
+                <li>1 645 kr</li>
+                <li>upp till 2 personer</li>
+                <li>1.5 timmars porträttfotografering</li>
+                <li>5 valfria Högupplösta Redigerade Bilder</li>
+              </ul>
+            </div>
+            <div class="price_column"><!-- Flexbox -->
+              <ul>
+                <li>
+                  <h3>Stora paketet:</h3>
+                </li>
+                <li>1 995 kr</li>
+                <li>upp till 3 personer</li>
+                <li>2 timmars porträttfotografering</li>
+                <li>8 valfria Högupplösta Redigerade Bilder</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </main>
+      <!-- Price for weddings -->
+      <main class="showCase gone" id="price_weddingMain">
+        <main class="price_mainContent">
+          <div class="price_row">
+            <div class="price_column">
+              <h1>Bröllopsfotografering</h1>
+            </div>
+            <div class="price_column">
+              <div class="price_content con_StaffShadow">
+                <img src="../pictures/portfolio/3.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="price_row">
+            <div class="price_column">
+              <h1 style="text-align: center;">Paket:</h1>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h3>Bronspaketet:</h3>
+                </li>
+                <li>8 495 kr</li>
+                <li>4 timmars Bröllopsfotografering</li>
+                <li>Konsultationsmöte ingår</li>
+                <li>Alla de *bästa bilderna ingår</li>
+              </ul>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h3>Silverpaketet</h3>
+                </li>
+                <li>13 495 kr</li>
+                <li>8 timmars Bröllopsfotografering</li>
+                <li>Konsultationsmöte ingår</li>
+                <li>Alla de *bästa bilderna ingår</li>
+                <li>
+                  Kostnadsfri förfotografering/ pre-weddingshoot innan bröllopet
+                </li>
+              </ul>
+            </div>
+            <div class="price_column" style="flex: 2;">
+              <ul>
+                <li>
+                  <h3>Guldpaketet:</h3>
+                </li>
+                <li>19.995 kr</li>
+                <li>12 timmars Bröllopsfotografering</li>
+                <li>Konsultationsmöte ingår</li>
+                <li style="font-weight: bold; font-style: italic;">
+                  Extra fotografassistent som fotograferar
+                </li>
+                <li>Alla de *bästa bilderna ingår</li>
+                <li>Två fine art prints 40x30 cm</li>
+                <li>
+                  Ett vackert bröllopsalbum inklusive en lyxigt handgjord
+                  presentbox
+                </li>
+                <li>
+                  Kostnadsfri förfotografering/ pre-weddingshoot innan bröllopet
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </main>
+      <!-- Price for Events -->
+      <main class="showCase gone" id="price_eventMain">
+        <main class="price_mainContent">
+          <div class="price_row">
+            <div class="price_column">
+              <h1>Evenemangsfotografering</h1>
+            </div>
+            <div class="price_column">
+              <div class="price_content con_StaffShadow">
+                <img src="../pictures/fireLongBg.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="price_row">
+            <div class="price_column">
+              <h1 style="text-align: center;">Paket:</h1>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h3>Lilla paketet:</h3>
+                </li>
+                <li>1695 kr per timme (minst 2 timmar)</li>
+                <li>
+                  1 till 2 Högupplösta Redigerade Bilder per timme som event
+                  pågår
+                </li>
+              </ul>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h3>Medium Paketet</h3>
+                </li>
+                <li>2695 kr per timme (minst 2 timmar)</li>
+                <li>
+                  2 till 4 Högupplösta Redigerade Bilder per timme som event
+                  pågår
+                </li>
+                <li>Konsultationsmöte ingår</li>
+              </ul>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h3>Stora Paketet</h3>
+                </li>
+                <li>3295 kr per timme (minst 4 timmar)</li>
+                <li>8 till 16 Högupplösta Redigerade Bilder</li>
+                <li>Konsultationsmöte ingår</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </main>
+      <main class="showCase gone" id="price_companyMain">
+        <main class="price_mainContent">
+          <div class="price_row">
+            <div class="price_column">
+              <h1>Företagsfotografering</h1>
+            </div>
+            <div class="price_column">
+              <div class="price_content con_StaffShadow">
+                <img src="../pictures/drone.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="price_row">
+            <div class="price_column">
+              <h1 style="text-align: center;">Paket:</h1>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h2>Lilla paketet:</h2>
+                </li>
+                <li>3595kr</li>
+                <li>2 timmars Företagsfotografering</li>
+                <li>2 valfria Högupplösta Redigerade Bilder</li>
+              </ul>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h2>Medium Paketet</h2>
+                </li>
+                <li>6595 kr</li>
+                <li>4 timmars Företagsfotografering</li>
+                <li>6 valfria Högupplösta Redigerade Bilder</li>
+              </ul>
+            </div>
+            <div class="price_column">
+              <ul>
+                <li>
+                  <h2>Stora paketet:</h2>
+                </li>
+                <li>9995 kr</li>
+                <li>6 timmars Företagsfotografering</li>
+                <li>10 valfria Högupplösta Redigerade Bilder</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </main>
+    </div>
+
+    <footer class="foot">
+      <div class="toes">
+        <h3>Våra tjänster:</h3>
+        <span>
+          <ul>          
+            <li><a href="#bgCalcForms" onclick="setDisplay(price_weddingMain, 'block', price_profileMain, 'none', price_eventMain, 'none', price_companyMain, 'none' );">Porträttfotografering</a></li>
+            <li><a href="#bgCalcForms"  onclick="setDisplay(price_weddingMain, 'none', price_profileMain, 'block', price_eventMain, 'none', price_companyMain, 'none' );" >Bröllopsfotografering</a></li>
+            <li><a href="#bgCalcForms" onclick="setDisplay(price_weddingMain, 'none', price_profileMain, 'none', price_eventMain, 'block', price_companyMain, 'none' );">Evenemangsfotografering</a></li>
+            <li><a href="#bgCalcForms" onclick="setDisplay(price_weddingMain, 'none', price_profileMain, 'none', price_eventMain, 'none', price_companyMain, 'block' );">Företagsfotografering</a></li>
+          </ul>
+        </span>
+      </div>
+      <div class="toes">
+        <h3>Kontakt:</h3>
+        <span>
+          <ul>
+            <li>David: davlin@creatorise.com</li>
+            <li>Richard: ricjoh@creatorise.com</li>
+            <li>Cruise: badass@creatorise.com</li>
+            <li>Solo: harsol@creatorise.com</li>
+          </ul>
+        </span>
+      </div>
+      <div class="toes">
+        <h3>Våra Andra sidor:</h3>
+        <span>
+          <ul>
+            <li><a href="../index.html">Startsida</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacts.html">Kontakt</a></li>
+            <li><a href="aboutUs.html">Om oss</a></li>
+          </ul>
+        </span>
+      </div>
+      <div class="toes">
+        <span>
+          <img src="../pictures/creatorise_logoText.svg" />
+        </span>
+      </div>
+    </footer>
+    <footer class="footLeft">
+      <div class="toesLeft">
+        © 2018-2020 Creatorise<i>; Let the Creator Inside you Rise.</i> All
+        Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

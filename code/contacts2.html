@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kontakt</title>
+<link href="../style/stylesheet.css" rel="stylesheet" type="text/css">
+<script src="../java.js"></script>
+</head>
+<!--
+TODO: Change pictures 
+Scrolla inte ner för kontakt info
+
+
+-->
+<body>
+    <body>
+        <nav class="navbar"> 
+            <ul style="list-style-type:none;">
+            <li><a href="../">Startsida</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="price.html">Priskalkylator</a></li>
+            <li><a>Kontakt</a></li>
+            <li style="float:right"><a href="aboutUs.html">Om oss</a></li>
+            </ul>
+          </nav>
+    <div class="parallax prx-1" id="bgFormsIntro" style="display: flex;"><!--? Use style="url(picture per class?)"-->
+      <main class="formsMail">
+        <form name="kontakt" method="post" action="formmail.php"> <!-- * TESTED; WORKS -->
+        <fieldset style="width: 450px; border-radius: 0.5em; padding: 5px;">
+        <legend >Kontakta oss</legend>
+          Namn:<br>
+        <input name="name" type="text" size="30" id="first" onkeyup="validate();" placeholder="Firstname Lastname"> <span id="errFirst"></span>
+        <br>
+          Ämne:<br>
+        <input name="subject" type="text" size="30" id="subj" onkeyup="validate();" placeholder="Subject"><span id="errSubj"></span>
+        <br>
+          email:<br>
+        <input name="email" type="text" size="30" id="email" onkeyup="validate();" placeholder="your@mail.com"><span id="errEmail"></span>
+        <br>
+          Meddelande:<br>
+        <textarea name="message" cols="30" rows="5" id="content" onkeyup="validate();" placeholder="The message you want to push forward"></textarea><span id="errContent"></span>
+        <br>
+        <span id="errFinal"></span> <!-- ! DOESNT WORK ! -->
+        <br>
+        <input name="submit" type="submit" value="Skicka meddelandet">
+        </fieldset>
+        </form>
+      </main>
+    </div>
+    <div class="text quoteText">
+        <h2>"Write a Nice Youthous Quote with the most Beautifully Creation of Words;<br> a Life as Photografer"</h2> 
+        
+        </div>    
+  <!-- This text is just a placeholder-->
+        <div class="parallax prx-2" id="bgFormsMail"> <!--TODO: justfy center + flex etc.
+        error message / continue on same line as content
+        background
+        round edges
+        decorate textboxes ie. 3d effect or something
+      -->
+          
+        </div>
+ 
+
+
+</body>
+</html>

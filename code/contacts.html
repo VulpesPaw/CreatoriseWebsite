@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Creatorise: Kontakt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+  <link href="../style/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../pictures/creatorise_logo.ico" type="image/x-icon"/>
+  <script src="../java.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="screenPc">
+      <li><img src="../pictures/creatorise_logo.svg" /></li>
+      <li><a href="../">Startsida</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="price.html">Priser</a></li>
+      <li>
+        <a style="font-weight: bold; letter-spacing: 0.8px;">Kontakt</a>
+      </li>
+      <li></li>
+      <li style="float: right;"><a href="aboutUs.html">Om oss</a></li>
+    </ul>
+    <ul class="screenPhone">
+      <li><img src="../pictures/creatorise_logo.svg" /></li>
+      <li>Creatorise</li>
+      <li>
+        <a href="javascript:void(0);" class="icon" onclick="navDisplay()">
+          <img src="../pictures/menu.svg" /></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="navPhone">
+    <div id="navPhoneLinks">
+      <ul>
+        <li style="height: 8vh; visibility: hidden;"><a>filler</a></li>
+        <li><a href="../">Startsida</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="price.html">Priser</a></li>
+        <li>
+          <a style="font-weight: bold; letter-spacing: 0.8px;">Kontakt</a>
+        </li>
+        <li><a href="aboutUs.html">Om oss</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="parallax" id="bgFormsIntro" style="display: flex; height: 90vh;"><!-- Parallax background, centers Form -->
+    <main class="formsMail"><!-- The mail form -->
+      <form name="kontakt" method="post" action="formmail.php">
+        <fieldset>
+          <legend style="text-align: center; font-size: 16pt;">
+            <h2>Kontakta oss</h2>
+          </legend>
+          Namn:<br />
+          <input name="name" type="text" size="30" id="first" onkeyup="validate();" placeholder="Förnamn Efternamn" />
+          <span id="errFirst"></span>
+          <br />
+          Ämne:<br />          
+            <select name="subject" id="subj"><!-- Dropdown box -->
+              <option value="none">--Välj tjänst--</option>
+              <option value="Bröllopsfotografering">Bröllopsfotografering</option>
+              <option value="Porträttfotografering">Porträttfotografering</option>
+              <option value="Evenemangfotografering">Evenemangfotografering</option>
+              <option value="Företagsfotografering">Företagsfotografering</option>
+              <option value="Övrigt">Övrigt</option>
+          </select>
+         
+          <br />
+          email:<br />
+          <input name="email" type="text" size="30" id="email" onkeyup="validate();" placeholder="namn@mejl.com" /><span
+            id="errEmail"></span>
+          <br />
+          Meddelande:<br />
+          <textarea name="message" cols="30" rows="5" id="content" onkeyup="validate();"
+            placeholder="Meddelandet du vill framföra..."></textarea><span id="errContent"></span>
+          <br />
+          <span id="errFinal"></span>
+          <br />
+          <input name="submit" type="submit" value="Skicka meddelandet" />
+        </fieldset>
+      </form>
+    </main>
+  </div>
+  <div class="quoteText scrollDown">
+    Scrolla Ner för Mer Kontakt Information
+  </div>
+  <div id="bgFormsMail" class="parallax center">
+    <main class="con_staff" style="max-width: 1200px;"><!-- Flexcontainer -->
+      <div class="con_staffRow"><!-- Flexcontainer and flexbox -->
+        <div class="con_staffProfile">
+          <div class="column"><!-- flexbox -->
+            <div class="content con_StaffShadow">
+              <img src="../pictures/person_davidlindstrom.jpg" alt="  David Lindström" />
+            </div>
+          </div>
+          <div class="con_profileText">
+            <h2>
+              David Lindström
+            </h2>
+            <span>
+              VD och Filmare för Creatorise<br />
+              E-post: davlin@creatorise.com<br />
+              Tel: +46 70 513 53 73<br />
+              Tel (Dir.): +46 35 260 60 79</span>
+          </div>
+        </div>
+        <div class="con_staffProfile">
+          <div class="column"><!-- flexbox -->
+            <div class="content con_StaffShadow">
+              <img src="../pictures/person_richardjohansson.jpg" alt="  Richard Johansson" />
+            </div>
+          </div>
+          <div class="con_profileText">
+            <h2>
+              Richard Johansson
+            </h2>
+            <span>
+              Vice Vd, Fotograf och webbutvecklare för Creatorise<br />
+              E-post: ricjoh@creatorise.com<br />
+              Tel: +46 722 59 73 30<br />
+              Tel (Dir.): +46 35 206 60 97</span>
+          </div>
+        </div>
+      </div>
+      <div class="con_staffRow">
+        <div class="con_staffProfile">
+          <div class="column">
+            <div class="content con_StaffShadow">
+              <img src="../pictures/person_tomcruise.jpg" alt="Tom Cruise" />
+            </div>
+          </div>
+          <div class="con_profileText">
+            <h2>
+              Tom Cruise
+            </h2>
+            <span>
+              Fotograf för Creatorise<br />
+              E-post: badass@creatorise.com<br />
+              Tel: +46 19 62 07 03<br />
+              Tel (Dir.): 46+ 19 81 07 17</span>
+          </div>
+        </div>
+        <div class="con_staffProfile">
+          <div class="column">
+            <div class="content con_StaffShadow">
+              <img src="../pictures/person_hansolo.jpg" alt=" Harrison Ford Solo" />
+            </div>
+          </div>
+          <div class="con_profileText">
+            <h2>
+              Harrison Ford Solo
+            </h2>
+            <span>
+              Fotograf och Filmare för Creatorise<br />
+              E-post: harsol@creatorise.com<br />
+              Tel: +46 19 77 05 04<br />
+              Tel (Dir.): +46 636 164 657 40-4 124 239</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <div class="toes">
+      <h3>Våra tjänster:</h3>
+      <span>
+        <ul>          
+          <li><a href="price.html">Porträttfotografering</a></li>
+          <li><a href="price.html">Bröllopsfotografering</a></li>
+          <li><a href="price.html">Evenemangsfotografering</a></li>
+          <li><a href="price.html">Företagsfotografering</a></li>
+        </ul>
+      </span>
+    </div>
+    <div class="toes">
+      <h3>Kontakt:</h3>
+      <span>
+        <ul>
+          <li>David: davlin@creatorise.com</li>
+          <li>Richard: ricjoh@creatorise.com</li>
+          <li>Cruise: badass@creatorise.com</li>
+          <li>Solo: harsol@creatorise.com</li>
+        </ul>
+      </span>
+    </div>
+    <div class="toes">
+      <h3>Våra Andra sidor:</h3>
+      <span>
+        <ul>
+          <li><a href="../index.html">Startsida</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="price.html">Priser</a></li>
+          <li><a href="aboutUs.html">Om oss</a></li>
+        </ul>
+      </span>
+    </div>
+    <div class="toes">
+      <span>
+        <img src="../pictures/creatorise_logoText.svg" />
+      </span>
+    </div>
+  </footer>
+  <footer class="footLeft">
+    <div class="toesLeft">
+      © 2018-2020 Creatorise<i>; Let the Creator Inside you Rise.</i> All
+      Rights Reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

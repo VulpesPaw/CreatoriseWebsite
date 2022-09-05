@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+  <title>Creatorise</title>
+  <link rel="stylesheet" href="style/stylesheet.css" />
+  <link rel="shortcut icon" href="pictures/creatorise_logo.ico" type="image/x-icon"/>
+  <script src="java.js"></script>
+</head>
+
+<body>
+  <nav class="navbar"> <!-- Navigation, for pc -->
+    <ul class="screenPc">      
+      <li><img src="pictures/creatorise_logo.svg"/></li><!-- .svg equals vectorfile, more scalible -->
+      <li>
+        <a style="font-weight: bold; letter-spacing: 0.8px;">Startsida</a>
+      </li>
+      <li><a href="code/portfolio.html">Portfolio</a></li>
+      <li><a href="code/price.html">Priser</a></li>
+      <li><a href="code/contacts.html">Kontakt</a></li>
+      <li></li>
+      <li style="float: right;"><a href="code/aboutUs.html">Om oss</a></li>
+    </ul>
+    <ul class="screenPhone">
+      <li><img src="pictures/creatorise_logo.svg" /></li>
+      <li>Creatorise</li>
+      <li><a href="javascript:void(0);" class="icon" onclick="navDisplay()">
+          <img src="pictures/menu.svg" /></a></li>
+    </ul>
+  </nav>
+  <div class="navPhone"><!-- Navigation, for responive -->
+    <div id="navPhoneLinks">
+      <ul>
+        <li style="height: 8vh; visibility: hidden;"><a>filler</a></li><!-- In order to aline phone navbar propely -->
+        <li><a style="font-weight: bold; letter-spacing: 0.8px;">Startsida</a></li>
+        <li><a href="code/portfolio.html">Portfolio</a></li>
+        <li><a href="code/price.html">Priser</a></li>
+        <li><a href="code/contacts.html">Kontakt</a></li>
+        <li><a href="code/aboutUs.html">Om oss</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="parallax prx-1 scrollDownPage "> <!-- Parallax background, makes 'scrolldown-text' visible -->
+    <div class="ind_divIntro"><!-- Makes the text centerd -->
+      <h1 class="headerIntro">Creatorise</h1>
+    </div>
+  </div>
+  <div class="quoteText scrollDown">
+    Scrolla Ner för Mer Information
+  </div>
+  <div class="text quoteText">
+    <h2>"Let the Creator Inside you Rise"</h2>
+  </div>
+  
+  <main class="WelcSq"> 
+    <div class="parallax prx-2"> <!-- Parallax background -->
+      <div class="welcText"> <!-- Fading mist ouside textbox -->
+        <div class="welcTextInner"> <!-- A highlight within textbox to make it easier to read -->
+          <span>Har Du svårt att forma läckra intresseväckande bilder?<br />
+            Vet Du inte hur man erhåller kvalitén från det naturliga           
+            ljuset?<br />
+            Eller vill du bara ha den där perfekta familjebilden med ett djup
+            som man kan trilla in i?<br />
+            Då har du kommit rätt! Vi skapar professionella bilder och filmer
+            till alla ögonblick!<br />
+            Bilder och Film från oss kan vara allt från porträtt och bröllop
+            till marknadsföring och eventsammanhang!<br />
+            Tillsammans lyfter vi fram er familj eller ert företag för att Ni
+            ska kunna visa vad Ni går för; visa världen allt Ni kan
+            uppnå!</span>         
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="quoteText" style="padding: 1em;">
+    <h2>Senaste Arbetena hos Creatorise:</h2>
+  </div>
+  
+    <div class="parallax prx-2 ind_lastWork"> <!-- Parallax background -->
+      <div class="largeBoxWrapper parrallax">
+        <main class="largeBox"> <!-- Flex container -->
+          <div class="littleBox"> <!-- Flex box -->
+            <div class="column">
+              <div class="content con_StaffShadow">
+                <img src="pictures/person_darkzone.jpg" alt="Filming Crew" />
+              </div>
+            </div>           
+            <div class="index_proText">
+              <h2>
+                Filmarbete, DarkZone
+              </h2>
+              DarkZone, är en organisation som anordnar Lan åt både
+              Privarpersoner och Företag. <br />
+              De hyrde oss för att göra en reklamfilm för att lyfta fram
+              arbetet de gör, reklamfilmen kan ses på deras
+              <a href="code/invalid.html" target="blank">Hemsida</a>. Bilden visar en del
+              av vår personal som håller i en Lumix filmkamera med ett 0.8
+              F-stops objektiv för att kunna få in så mycket ljus som
+              möjligt.<br />
+              DarkZones marknadsföringschef skrev "Fantastiskt, detta är en
+              otroligt bra film som ni har skapat, den kommer definitivt få oss
+              att sticka ut från alla andra Lan-aktörer." när de fick filmen.
+            </div>
+          </div>
+          <div class="littleBox"> <!-- Flex box -->
+            <div class="column">
+              <div class="content con_StaffShadow">
+                <img src="pictures/person_profilePic.jpg" alt="Portrait" />
+              </div>
+            </div>
+            <div class="index_proText">
+              <h2>Porträttfotografering, <br />Aperture Science Inc.</h2>
+              Aperture Science Inc. och deras bolag var i behov av kreativa personalbilder då de
+              bytt ut delar av sin personal. Vi bokade tid i vår
+              fotograferingsstudio där vi tog bilderna. De blev väldigt nöjda
+              och resten kan ses på deras
+              <a href="code/invalid.html" target="blank">Hemsida</a>.
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  
+  <footer class="foot"><!-- Flexcontainer -->
+    <div class="toes"><!-- Flexbox -->
+      <h3>Våra tjänster:</h3>
+      <span>
+        <ul>          
+          <li><a href="code/price.html">Porträttfotografering</a></li>
+          <li><a href="code/price.html">Bröllopsfotografering</a></li>
+          <li><a href="code/price.html">Evenemangsfotografering</a></li>
+          <li><a href="code/price.html">Företagsfotografering</a></li>
+        </ul>
+      </span>
+    </div>
+    <div class="toes"><!-- Flexbox -->
+      <h3>Kontakt:</h3>
+      <span>
+        <ul>
+          <li>David: davlin@creatorise.com</li>
+          <li>Richard: ricjoh@creatorise.com</li>
+          <li>Cruise: badass@creatorise.com</li>
+          <li>Solo: harsol@creatorise.com</li>
+        </ul>
+      </span>
+    </div>
+    <div class="toes"><!-- Flexbox -->
+      <h3>Våra Andra sidor:</h3>
+      <span>
+        <ul>         
+          <li><a href="code/portfolio.html">Portfolio</a></li>
+          <li><a href="code/price.html">Priser</a></li>
+          <li><a href="code/contacts.html">Kontakt</a></li>
+          <li><a href="code/aboutUs.html">Om oss</a></li>
+        </ul>
+      </span>
+    </div>
+    <div class="toes"><!-- Flexbox -->
+      <span>
+        <img src="pictures/creatorise_logoText.svg" />
+      </span>
+    </div>
+  </footer>
+  <footer class="footLeft">
+    <div class="toesLeft">
+      © 2018-2020 Creatorise<i>; Let the Creator Inside you Rise.</i> All Rights
+      Reserved.
+    </div>
+  </footer>
+</body>
+</html>

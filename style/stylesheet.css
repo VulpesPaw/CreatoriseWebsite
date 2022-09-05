@@ -1,0 +1,1008 @@
+/* Validated*/
+/*css and font are in same foldor in order to have enought bulletproof font-syntax to be working*/
+
+/** Universal*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 1em;
+  background-color: white;
+  z-index: 2000;
+}
+
+/*Navigation bar*/
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 0px 45px 10px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 4.4vh;
+  min-height: 40px;
+  font-family: FiraSans;
+  font-weight: lighter;
+  
+}
+
+.navbar li {
+  float: left;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px 14px 14px;
+  text-decoration: none;
+  top: 0;
+  font-size: 12pt;
+  letter-spacing: 0.3px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navbar li a:hover {
+  background-color: #000;
+}
+
+.navbar li a:active {
+  background-color: rgb(95, 95, 95);
+}
+.navbar img {
+  height: 38px;
+  padding: 8px 8px 0 0;
+}
+.navbar li:nth-of-type(1) {
+  flex: 0;
+}
+.navbar li:nth-of-type(6) {
+  flex: 14;
+}
+.navbar li:nth-of-type(7) {
+  white-space: nowrap;
+}
+
+/* Phone Navigation*/
+.navPhone {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  z-index: 666;
+}
+
+/* Hides the links inside the navigation menu*/
+.navPhone #navPhoneLinks {
+  display: none;
+}
+#navPhoneLinks li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+}
+.screenPhone li {
+  padding: 7px;
+}
+.navPhone a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.screenPhone .icon {
+  display: block;
+  float: right;
+  flex: 0;
+  top: 25px;
+  padding: 0;
+}
+#navPhoneLinks ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#navPhoneLinks li:nth-of-type(2) {
+  /* Colorises the different buttons*/
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+}
+#navPhoneLinks li:nth-of-type(4) {
+  background-color: #333;
+  width: 50%;
+}
+#navPhoneLinks li:nth-of-type(5) {
+  background-color: #333;
+  width: 50%;
+}
+#navPhoneLinks li:nth-of-type(3n + 3) {
+  background-color: rgb(70, 70, 70);
+  width: 50%;
+}
+.navPhone a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.headerIntro {
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 75px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+}
+
+.prx-1 {
+  background-image: url(../pictures/indexBg.jpg);
+}
+
+.prx-2 {
+  background-image: url(../pictures/cameraBg.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerIntroGrey {
+  color: rgb(155, 155, 155);
+  font-family: CorGar;
+}
+
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.text h2 {
+  padding: 1em;
+}
+.quoteText {
+  font-family: Niconne;
+  font-size: 32px;
+  height: 0fr;
+  text-align: center;
+}
+.scrollDown {
+  padding: 3vh;
+}
+.scrollDownPage {
+  height: 90vh;
+  display: flex;
+}
+
+.foot {
+  padding: 2em;
+  text-align: center;
+  height: auto;
+  background-color: #333;
+  display: flex;
+  color: white;
+  font-family: Comfortaa;
+}
+.toes {
+  flex: 1;
+  font-size: 12pt;
+}
+.toes a {
+  text-decoration: none;
+  color: white;
+}
+.toes a:link {
+  text-decoration: none;
+  color: white;
+}
+.toes a:visited {
+  text-decoration: none;
+  color: white;
+}
+.toes a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.toes a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.toes h3 {
+  font-weight: bold;
+  font-size: 14pt;
+  padding: 3px;
+}
+.toes span {
+  font-weight: lighter;
+  font-style: normal;
+}
+.toes li {
+  padding: 4px;
+  list-style-type: none;
+}
+.toes img {
+  height: 100%;
+  width: 100%;
+  max-width: 200px;
+}
+.footLeft {
+  padding: 0 0 20px 0;
+  text-align: center;
+  height: 1em;
+  background-color: #333;
+  display: flex;
+  color: white;
+  font-family: Comfortaa;
+}
+.toesLeft {
+  flex: 1;
+  font-size: 12pt;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+  display: flex; /*Makes pictures per row dynamic*/
+  flex: 1;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  flex: 1;
+}
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.content > img {
+  width: 100%;
+}
+.gone {
+  display: none;
+}
+
+/** Index */
+.welcText {
+  font-size: 20pt;
+  text-align: center;
+  color: rgb(32, 32, 32);
+  box-shadow: rgba(255, 255, 255, 0.22) 0 0 100px 75px;
+  /*Provides a shadow of light to make the text easier to destinguish from the background, this part makes tha halo around the div*/
+  z-index: 0;
+  font-family: Texgyre;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.welcTextInner {
+  /*Provides a shadow of light within (inset) the div*/
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 100vh 100vh inset;
+}
+.ind_divIntro {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.largeBox {
+  padding: 1em;
+  display: flex;
+}
+.littleBox {
+  flex: 1;
+  width: 40%;
+  padding: 2.5%;
+  margin: 2.5%;
+  background-color: rgb(218, 218, 228);
+  display: flex;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.75) 25px 45px 5vh 1vh;
+}
+.littleBox > .column {
+  flex: 1.5;
+}
+.littleBox > .index_proText {
+  flex: 1;
+  margin: 2em 2em 2em 3em;
+  font-family: FiraSans;
+}
+.littleBox h2 {
+  font-family: Niconne;
+  font-size: 24pt;
+  margin: 0 0 2em 0;
+}
+.ind_lastWork {
+  /*Background of LargeBox*/
+  background-image: url(../pictures/cameraLaptopBg.jpg);
+  height: auto;
+  padding-bottom: 35px;
+  padding-top: 10px;
+}
+
+/** Portfolio */
+#portfolio_hdBg {
+  background-image: url(../pictures/portfolio/portfolioBg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 10%;
+  display: flex; /*Centers the intro-text*/
+  justify-content: center;
+  align-items: center;
+}
+#creatorisePortfolio {
+  background-image: url(../pictures/portfolio/portfolioCaseBg.jpg);
+  height: 1600px;
+}
+
+.showCase {
+  max-width: 1000px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+/** Prices */
+#bgCalcForms {
+  background-image: url(../pictures/camera_coffe.jpg);
+  height: 100vh;
+}
+#bgCalcForms ul {
+  background-color: rgb(228, 228, 228);
+}
+.priceHead {
+  background-color: whitesmoke;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.75) 1vh 2.5vh 5vh 1vh;
+  width: 480px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fieldbox {
+  display: flex;
+  padding: 5px;
+  border-radius: 0.5em;
+  flex-direction: column;
+  width: 450px;
+  height: auto;
+}
+.fieldbox div {
+  margin: 5px;
+  height: 10vh;
+}
+.fieldbox input {
+  width: 100%;
+  height: 100%;
+  font-family: CorGar;
+  font-size: 16pt;
+  font-weight: bold;
+}
+.price_row {
+  margin: 8px -16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.price_row,
+.price_row > .column {
+  padding: 8px;
+}
+.price_column {
+  float: left;
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+}
+.price_column h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 28pt;
+  font-family: Niconne;
+}
+.price_column ul > h1 {
+  font-size: 24pt;
+}
+.price_column h2 {
+  text-align: center;
+  width: 100%;
+}
+.price_row:after {
+  content: "";
+  clear: both;
+}
+.price_mainContent {
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: -40vh; 
+  width: 100%;
+  background-color: rgb(218, 218, 228);
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.5) 1vh 3vh 5vh 2vh;
+  padding: 5px;
+}
+.price_content {
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+  width: 80%;
+}
+.price_row img {
+  width: 100%;
+}
+.price_column ul {
+  list-style: inside;
+  box-shadow: rgba(0, 0, 0, 0.75) 1vh 2vh 3vh 0.25vh;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-family: FiraSans;
+}
+.price_column ul li:nth-of-type(1) {
+  list-style: none;
+}
+.price_mainContent .price_row:nth-of-type(2) > .price_column:nth-of-type(1) {
+  flex: 0.5;
+}
+.price_row:nth-of-type(2) > .price_column {
+  padding-right: 49px;
+}
+
+/** Contact*/
+
+#bgFormsIntro {
+  background-image: url(../pictures/formsBg.jpg);
+}
+#bgFormsMail {
+  background-image: url(../pictures/woodBg.jpg);
+  background-position: center 0%;
+  background-color: white;
+  height: 100vh;
+  min-height: 1000px;
+}
+.formsMail {
+  background-color: whitesmoke;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.75) 1vh 2.5vh 5vh 1vh;
+  width: 480px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formsMail input,
+textarea, select, option {
+  border: 2px inset rgba(78, 78, 78, 0.589);
+  padding: 2px;
+  border-radius: 0.5em;
+  font-family: FiraSans;
+}
+.formsMail input:nth-last-of-type(1) {
+  border: 2px inset rgba(78, 78, 78, 0.589);
+  border-radius: 0.5em;
+}
+.formsMail form {
+  width: 100%;
+}
+.formsMail fieldset {
+  width: 450px;
+  border-radius: 0.5em;
+  padding: 5px;
+}
+.formsMail textarea {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con_staff {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+}
+.con_staffRow {
+  display: flex;
+  flex: 1;
+}
+.con_staffProfile {
+  flex: 1;
+  width: 45%;
+  padding: 2.5%;
+  margin: 2.5%;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.75) 1vh 2.5vh 5vh 1vh;
+}
+.con_staffProfile > .column {
+  flex: 1.5;
+}
+.con_staffProfile > .con_profileText {
+  flex: 1;
+  margin: 2em;
+}
+.con_staffProfile span{
+  font-family: FiraSans;
+}
+.con_StaffShadow {
+  box-shadow: rgba(0, 0, 0, 0.5) 0.5em 0.8em 2em 5px;
+}
+
+/** About Us*/
+
+.aboutUsParBg {
+  display: flex;
+  height: 90vh;
+  background-image: url(../pictures/fireWideBg.jpg);
+  background-position: center 65%;
+}
+.aboutUsTextBg {
+  background-image: url(../pictures/winderLeafBg.jpg);
+  height: 1750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  top: -200px;
+}
+.aboutUs_Main {
+  max-width: 1000px;
+  position: relative;
+  top: 0;
+}
+.row,
+.row > .abu_column {
+  padding: 8px;
+}
+.abu_column {
+  float: left;
+  width: 25%;
+  flex: 1;
+}
+.abu_column h1{
+  font-family: Texgyre;
+}
+.abu_content {
+  background-color: white;
+  padding: 10px;
+  height: 100%;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.75) 1vh 2.5vh 5vh 1vh;
+}
+.abu_content > img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/** Responsive */
+
+@media (max-width: 1200px) {
+  /** Universal*/
+
+  .navbar li:nth-of-type(6) {
+    display: none;
+    height: 20vh;
+  }
+  .foot {
+    flex-flow: row wrap;
+  }
+  .toes {
+    min-width: 50%;
+  }
+  .prx-2 {
+    height: auto;
+  }
+  .showCase {
+    max-width: 90%;
+  }
+
+  /** Index */
+
+  .welcTextInner {
+    padding: 20px;
+  }
+  .littleBox {
+    flex-direction: column;
+    /* box-shadow: none; */
+  }
+  .littleBox .column {
+    width: 100%;
+    flex: 1;
+  }
+  .largeBox .littleBox:nth-of-type(1) h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .WelcSq .parallax{
+    height: auto;
+    padding: 5vh;
+  }
+  /** Portfolio*/
+
+  #portfolio_hdBg {
+    background-position: 69% 0%;
+  }
+
+  #creatorisePortfolio {
+    height: auto;
+  }
+  /** Prices*/
+ 
+
+  .price_row:nth-of-type(1) .price_column:nth-of-type(1) {
+    flex: 0;
+    max-height: 100px;
+  }
+  .price_row:nth-of-type(1) .price_column:nth-of-type(2) {
+    display: flex;
+  }
+  .price_row:nth-of-type(1) .price_column:nth-of-type(2) .price_content {
+    justify-content: center;
+    align-items: center;
+  }
+  .price_column ul {
+    box-shadow: rgba(0, 0, 0, 0.75) 0.5vh 1vh 2vh 0.25vh;
+  }
+  .price_mainContent h1 {
+    white-space: nowrap;
+  }
+  .priceHead input {
+    border-radius: 1em;
+  }
+  /** Contact*/
+  .formsMail {
+    width: 80%;
+  }
+  .formsMail textarea {
+    border-radius: 1em;
+    padding: 10px;
+  }
+
+  .formsMail span {
+    white-space: nowrap;
+    width: 50px;
+  }
+  .formsMail fieldset {
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+  }
+  .formsMail input {
+    height: 5vh;
+    width: 80%;
+    padding: 2%;
+    margin: 0.5vh;
+    border-radius: 1em;
+  }
+  .formsMail textarea {
+    width: 80%;
+  }
+
+  .con_staffRow {
+    flex-direction: column;
+  }
+  .con_staffProfile {
+    width: 90%;
+  }
+  #bgFormsMail {
+    height: auto;
+  }
+  .con_profileText {
+    display: flex;
+    flex-direction: column;
+  }
+  .con_profileText h2 {
+    flex: 1;
+    font-size: 26pt;
+  }
+  .con_profileText span {
+    flex: 6;
+    font-size: 16pt;
+    line-height: 2;
+  }
+  /** About Us*/
+
+  .abu_column {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 80%;
+    padding: 20px;
+  }
+
+  .aboutUsParBg {
+    background-image: url(../pictures/fireLongBg.jpg);
+    background-position: center -190px;
+  }
+  .aboutUs_Main .row {
+    flex-direction: column;
+  }
+  .aboutUs_Main .row:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+  .aboutUsTextBg {
+    height: auto;
+  }
+}
+@media(max-height: 850px){
+  #bgCalcForms{
+    min-height: 850px;
+
+  }
+}
+@media (max-width: 600px) {
+  /** Universal*/
+  .headerIntro {
+    font-size: 50px;
+  }
+  .navbar li:nth-of-type(1) {
+    flex: 1;
+  }
+  .navbar li:nth-of-type(1) img {
+    float: left;
+  }
+  .navbar {
+    font-size: 24pt;
+    color: whitesmoke;
+    height: 8vh;
+  }
+
+  .toes {
+    min-width: 85%;
+    padding: 3vh;
+  }
+
+  .screenPc li {
+    display: none;
+  }
+
+  .screenPhone {
+    display: block;
+  }
+  .screenPhone li:nth-of-type(2){
+    font-family: none;
+    text-align: center;
+  }
+  .column {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  i {
+    display: none;
+  }
+
+  .showCase {
+    top: -300px;
+  }
+  .scrollDownPage {
+    height: 85vh;
+  }
+  /** Index*/
+
+  .welcText {
+    font-size: 16pt;
+  }
+
+  .littleBox:nth-of-type(2) {
+    display: none;
+  }
+  .ind_lastWork {
+    height: auto;
+  }
+  /** Portfolio*/
+
+  #creatorisePortfolio .showCase {
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /** Price*/
+  .price_mainContent h1 {
+    white-space: normal;
+  }
+  .priceHead {
+    width: 95%;
+  }
+  .priceHead form {
+    width: 100%;
+  }
+
+  .fieldbox {
+    width: 100%;
+  }
+  .price_mainContent {
+    flex-direction: column;
+    height: auto;
+  }
+  .price_row:nth-of-type(2) > .price_column {
+    padding: 10px;
+    margin: auto;
+    width: 90%;
+  }
+  #bgCalcForms {
+    height: 1400px;
+    min-height: auto;
+  }
+  /** Contacts*/
+  .formsMail input {
+    height: 7.5vh;
+    margin: auto;
+  }
+  .con_staffProfile {
+    flex-direction: column;
+  }
+
+  /** About us*/
+  .aboutUsParBg {
+    background-position: center -50px;
+  }
+}
+
+/** Font Inputs */
+/* Individual Fonts*/
+@font-face {
+  font-family: Niconne;
+  src: url(Niconne.ttf) format("truetype");
+}
+
+/* Texgyre*/
+@font-face {
+  font-family: Texgyre;
+  src: url(texgyrebonum-regular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Texgyre;
+  src: url(texgyrebonum-bold.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Texgyre;
+  src: url(texgyrebonum-italic.otf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Texgyre;
+  src: url(texgyrebonum-bolditalic.otf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comfortaa*/
+@font-face {
+  font-family: Comfortaa;
+  src: url(Comfortaa-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(Comfortaa-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(Comfortaa-Light.ttf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* CormorantGaramond (aka. CorGar) */
+@font-face {
+  font-family: CorGar;
+  src: url(CormorantGaramond-Medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CorGar;
+  src: url(CormorantGaramond-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: CorGar;
+  src: url(CormorantGaramond-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CorGar;
+  src: url(CormorantGaramond-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* FiraSans*/
+@font-face {
+  font-family: FiraSans;
+  src: url(FiraSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FiraSans;
+  src: url(FiraSans-Light.ttf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
